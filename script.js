@@ -82,7 +82,7 @@ const timeline = [
   { date: "2026-08-27", text: "Advanced to the Finals ITechnoCup 2026 CTF, playing with team BOEDOET AK DRAGON 47" },
   { date: "2026-09-19", text: "Top 1 kategori SMA/K di C.O.D.E Challenge 2026 CTF Penyisihan, playing with team D'Blanc (KiiOrg: First Blood Cryptography Wave 1 & 2; karashi: First Blood Forensic)" },
   { date: "2026-09-29", text: "1st Place - Cyber Security Competition | ITechno Cup 2026, playing with team BOEDOET AK DRAGON 47" },
-  { date: "2026-10-20", text: "2nd Place - Capture The Flag | IT Fest 2026 (HIMAPRO TI UMK), playing with team Wilsec as Forensic & Pwn" },
+  { date: "2026-10-20", text: "2nd Place - Capture The Flag | IT Fest 2026 (HIMAPRO TI UMK), playing with team WilSec - BOEDOET AK DRAGON 47" },
 ];
 
 const CATEGORY_LABEL = {
