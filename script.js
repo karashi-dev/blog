@@ -296,7 +296,7 @@ function renderHero() {
         { prompt: "$", text: "cat role.txt" },
         {
           prompt: ">",
-          text: `${profile.role} — ${profile.focus.join(" · ")}`,
+          text: `${profile.role} | ${profile.focus.join(" · ")}`,
           className: "term-out",
           pauseAfter: 250,
         },
@@ -429,12 +429,12 @@ function openLightbox(images, startIndex = 0) {
 function renderAwards() {
   const cards = awards.map((a, i) => {
     const images = [
-      { src: a.cert, alt: `Certificate — ${a.title}`, caption: `Certificate — ${a.title}` },
-      ...a.gallery.map((src) => ({ src, alt: `Dokumentasi — ${a.event}`, caption: `Dokumentasi — ${a.event}` })),
+      { src: a.cert, alt: `Certificate | ${a.title}`, caption: `Certificate | ${a.title}` },
+      ...a.gallery.map((src) => ({ src, alt: `Dokumentasi | ${a.event}`, caption: `Dokumentasi | ${a.event}` })),
     ];
 
     const certImg = el("img", {
-      attrs: { src: a.cert, alt: `Certificate — ${a.title}, ${a.event}`, loading: "lazy" },
+      attrs: { src: a.cert, alt: `Certificate | ${a.title}, ${a.event}`, loading: "lazy" },
     });
 
     const media = el(
