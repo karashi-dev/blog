@@ -37,11 +37,11 @@ const writeups = [
 
 const awards = [
   {
-    title: "1st Place Winner — Cyber Security Competition",
+    title: "1st Place Winner | Cyber Security Competition",
     subtitle: "High School Student Category",
     event: "ITechno Cup 2026, organized by HIMATIK, Politeknik Negeri Jakarta",
     date: "August 17 – September 29, 2026",
-    team: "BOEDOET AK DRAGON 47 — Raka Wirya Kusuma, Hans Nathanael Kusuma, Rifqi Al Muzhaky",
+    team: "BOEDOET AK DRAGON 47 | Raka Wirya Kusuma, Hans Nathanael Kusuma, Rifqi Al Muzhaky",
     certNo: "1701/PL3.13/SRt/ITECHNO CUP/HIMATIK PNJ/IX/2026",
     cert: "writeups/img/awards/itechnocup2026-certificate.jpg",
     gallery: [
@@ -50,11 +50,11 @@ const awards = [
     ],
   },
   {
-    title: "2nd Place Winner — Capture The Flag (CTF)",
+    title: "2nd Place Winner | Capture The Flag (CTF)",
     event: "IT Fest 2026, organized by HIMAPRO TI, Universitas Muria Kudus",
     date: "October 20, 2026",
     role: "Forensic & Pwn",
-    team: "Wilsec — Raka Wirya Kusuma, Hans Nathanael Kusuma, Rifqi Al Muzhaky",
+    team: "Wilsec BOEDOET AK DRAGON 47| Raka Wirya Kusuma, Hans Nathanael Kusuma, Rifqi Al Muzhaky",
     certNo: "0131/ITFEST-CYBER/HIMAPRO-TI/X/2026",
     cert: "writeups/img/awards/itfest2026-certificate.jpg",
     gallery: ["writeups/img/awards/itfest2026-team-photo.jpg"],
@@ -567,7 +567,7 @@ function renderAbout() {
 
 function renderFooter() {
   const links = [
-    { label: "github", href: "https://github.com/sinsrakzz" },
+    { label: "github", href: "https://github.com/karashi-dev" },
     { label: "linkedin", href: "https://www.linkedin.com/in/sinsrakzz/" },
   ];
 
