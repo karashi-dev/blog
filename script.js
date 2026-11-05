@@ -49,6 +49,16 @@ const awards = [
       "writeups/img/awards/itechnocup2026-team-photo.jpg",
     ],
   },
+  {
+    title: "2nd Place Winner — Capture The Flag (CTF)",
+    event: "IT Fest 2026, organized by HIMAPRO TI, Universitas Muria Kudus",
+    date: "October 20, 2026",
+    role: "Forensic & Pwn",
+    team: "Wilsec — Raka Wirya Kusuma, Hans Nathanael Kusuma, Rifqi Al Muzhaky",
+    certNo: "0131/ITFEST-CYBER/HIMAPRO-TI/X/2026",
+    cert: "writeups/img/awards/itfest2026-certificate.jpg",
+    gallery: ["writeups/img/awards/itfest2026-team-photo.jpg"],
+  },
 ];
 
 const tools = [
@@ -72,6 +82,7 @@ const timeline = [
   { date: "2026-08-27", text: "Advanced to the Finals ITechnoCup 2026 CTF, playing with team BOEDOET AK DRAGON 47" },
   { date: "2026-09-19", text: "Top 1 kategori SMA/K di C.O.D.E Challenge 2026 CTF Penyisihan, playing with team D'Blanc (KiiOrg: First Blood Cryptography Wave 1 & 2; karashi: First Blood Forensic)" },
   { date: "2026-09-29", text: "1st Place - Cyber Security Competition | ITechno Cup 2026, playing with team BOEDOET AK DRAGON 47" },
+  { date: "2026-10-20", text: "2nd Place - Capture The Flag | IT Fest 2026 (HIMAPRO TI UMK), playing with team Wilsec as Forensic & Pwn" },
 ];
 
 const CATEGORY_LABEL = {
@@ -440,11 +451,12 @@ function renderAwards() {
         media,
         el("div", { class: "award-body" }, [
           el("h3", { class: "award-title", text: a.title }),
-          el("div", { class: "award-subtitle", text: a.subtitle }),
+          a.subtitle ? el("div", { class: "award-subtitle", text: a.subtitle }) : null,
           el("div", { class: "award-meta" }, [
             el("span", { text: a.event }),
             el("span", { class: "meta-dim", text: a.date }),
           ]),
+          a.role ? el("div", { class: "award-role", text: `role: ${a.role}` }) : null,
           el("div", { class: "award-team", text: a.team }),
           el("div", { class: "award-certno", text: `cert no. ${a.certNo}` }),
         ]),
