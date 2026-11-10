@@ -2,8 +2,6 @@
 
 const profile = {
   handle: "karashi",
-  role: "forensic & pwn",
-  focus: ["memory forensics", "binary exploitation"],
   based_in: "Jakarta, ID",
   status: "available for CTF collabs",
   bio:
